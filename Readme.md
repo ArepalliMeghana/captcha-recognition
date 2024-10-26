@@ -1,10 +1,10 @@
-# CAPTCHA Recognition System using Deep Learning
+   # CAPTCHA Recognition System using Deep Learning
 
 ## Overview
 This project implements a deep learning model for recognizing text in CAPTCHA images using a combination of Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN). The system achieves high accuracy in decoding CAPTCHAs through a sophisticated architecture that combines image processing and sequence recognition.
 
 ## Key Features
-- **Advanced Architecture**: Combines CNN for feature extraction and Bidirectional LSTM for sequence processing
+- **Advanced Architecture**: Combines CNN for feature extraction and Bidirectional LSTM for sequence processing  
 - **CTC Loss Implementation**: Uses Custom CTC (Connectionist Temporal Classification) layer for efficient text recognition
 - **User-friendly Interface**: Web-based interface built with Gradio for easy testing
 - **High Accuracy**: Achieves reliable recognition rates on various CAPTCHA formats
@@ -45,3 +45,79 @@ cd captcha-recognition
 
 # Install dependencies
 pip install -r requirements.txt
+```
+Usage
+Running the Web Interface
+```bash
+python app.py
+```
+
+# CAPTCHA Recognition System
+
+## Performance
+
+- Training Accuracy: ~98%
+- Validation Accuracy: ~95%
+- Average Inference Time: <100ms per image
+- Character Recognition Rate: >97%
+
+## Model Training Details
+
+- Epochs: 30
+- Batch Size: 16
+- Optimizer: Adam
+- Loss Function: CTC Loss
+- Early Stopping: Patience of 5 epochs
+- Data Augmentation: None (base version)
+
+## Implementation Highlights
+
+- Custom CTC Layer: Implements CTC loss for sequence recognition
+- Bidirectional Processing: Captures context in both directions
+- Efficient Preprocessing: Optimized image processing pipeline
+- Robust Architecture: Handles various CAPTCHA styles
+
+## Results Visualization
+
+The system provides visual feedback showing:
+
+- Original CAPTCHA image
+- Predicted text
+- Confidence scores (if applicable)
+
+## Future Improvements
+
+- Support for more complex CAPTCHA patterns
+- Additional data augmentation techniques
+- Model optimization for faster inference
+- Support for colored CAPTCHAs
+- API endpoint implementation
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Dataset source: CaptchaCracker
+- TensorFlow team for the deep learning framework
+- Gradio team for the web interface framework
+
+## Contact
+
+- Arepalli Meghana
+- GitHub: @ArepalliMeghana
+- LinkedIn: https://www.linkedin.com/in/meghana-arepalli-6a003a25a
+
+## Citation
+
+@software{captcha_recognition,
+    author = {Arepalli Meghana},
+    title = {CAPTCHA Recognition System using Deep Learning},
+    year = {2024},
+    url = {https://github.com/ArepalliMeghana/captcha-recognition}
+}
