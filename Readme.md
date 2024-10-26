@@ -38,10 +38,13 @@ This project implements a deep learning model for recognizing text in CAPTCHA im
 - CUDA-capable GPU (recommended)
 
 ### Setup
-```bash
+
 # Clone the repository
 git clone https://github.com/your-username/captcha-recognition.git
 cd captcha-recognition
 
 # Install dependencies
 pip install -r requirements.txt
+
+
+python app.py
