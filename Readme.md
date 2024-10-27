@@ -40,7 +40,8 @@ This project implements a deep learning model for recognizing text in CAPTCHA im
 ### Setup
 
 # Clone the repository
-git clone https://github.com/your-username/captcha-recognition.git
+git clone https://github.com/ArepalliMeghana/captcha-recognition.git  
+
 cd captcha-recognition
 
 # Install dependencies
